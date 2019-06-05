@@ -15,10 +15,18 @@ steps:
   inputs:
     version: '2.1.300' # replace this value with the version that you need for your project
 
-- script: dotnet restore
+- script: dotnet restore FSBOL.sln
+
+- script: dotnet restore FSBOLJS.sln
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
     projects: 'FSBOL.sln'
+    arguments: '--configuration Release'
 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'FSBOLJS.sln'
+    arguments: '--configuration Release'
