@@ -19,6 +19,8 @@ steps:
 
 - script: dotnet restore FSBOLJS.sln
 
+- script: dotnet restore FSBOLTests.sln
+
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
@@ -29,4 +31,10 @@ steps:
   inputs:
     command: 'build'
     projects: 'FSBOLJS.sln'
+    arguments: '--configuration Release'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'FSBOLTests.sln'
     arguments: '--configuration Release'
