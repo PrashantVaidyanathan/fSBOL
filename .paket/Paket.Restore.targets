@@ -272,7 +272,6 @@
               Description="$(Description)"
               Copyright="$(Copyright)"
               RequireLicenseAcceptance="$(PackageRequireLicenseAcceptance)"
-              LicenseUrl="$(PackageLicenseUrl)"
               ProjectUrl="$(PackageProjectUrl)"
               IconUrl="$(PackageIconUrl)"
               ReleaseNotes="$(PackageReleaseNotes)"
@@ -319,7 +318,6 @@
               Description="$(Description)"
               Copyright="$(Copyright)"
               RequireLicenseAcceptance="$(PackageRequireLicenseAcceptance)"
-              LicenseUrl="$(PackageLicenseUrl)"
               ProjectUrl="$(PackageProjectUrl)"
               IconUrl="$(PackageIconUrl)"
               ReleaseNotes="$(PackageReleaseNotes)"
@@ -350,7 +348,10 @@
               RestoreOutputPath="$(RestoreOutputAbsolutePath)"
               NuspecFile="$(NuspecFileAbsolutePath)"
               NuspecBasePath="$(NuspecBasePath)"
-              NuspecProperties="$(NuspecProperties)"/>
+              NuspecProperties="$(NuspecProperties)"
+              PackageLicenseFile="$(PackageLicenseFile)"
+              PackageLicenseExpression="$(PackageLicenseExpression)"
+              PackageLicenseExpressionVersion="$(PackageLicenseExpressionVersion)"/>
 
     <PackTask Condition="$(UseMSBuild15_8_Pack)"
               PackItem="$(PackProjectInputFile)"
@@ -363,7 +364,6 @@
               Description="$(Description)"
               Copyright="$(Copyright)"
               RequireLicenseAcceptance="$(PackageRequireLicenseAcceptance)"
-              LicenseUrl="$(PackageLicenseUrl)"
               ProjectUrl="$(PackageProjectUrl)"
               IconUrl="$(PackageIconUrl)"
               ReleaseNotes="$(PackageReleaseNotes)"
@@ -393,7 +393,10 @@
               RestoreOutputPath="$(RestoreOutputAbsolutePath)"
               NuspecFile="$(NuspecFileAbsolutePath)"
               NuspecBasePath="$(NuspecBasePath)"
-              NuspecProperties="$(NuspecProperties)"/>
+              NuspecProperties="$(NuspecProperties)"
+              PackageLicenseFile="$(PackageLicenseFile)"
+              PackageLicenseExpression="$(PackageLicenseExpression)"
+              PackageLicenseExpressionVersion="$(PackageLicenseExpressionVersion)"/>
 
     <PackTask Condition="$(UseNuGet4_Pack)"
               PackItem="$(PackProjectInputFile)"
@@ -406,7 +409,6 @@
               Description="$(Description)"
               Copyright="$(Copyright)"
               RequireLicenseAcceptance="$(PackageRequireLicenseAcceptance)"
-              LicenseUrl="$(PackageLicenseUrl)"
               ProjectUrl="$(PackageProjectUrl)"
               IconUrl="$(PackageIconUrl)"
               ReleaseNotes="$(PackageReleaseNotes)"
@@ -435,7 +437,10 @@
               RestoreOutputPath="$(RestoreOutputAbsolutePath)"
               NuspecFile="$(NuspecFileAbsolutePath)"
               NuspecBasePath="$(NuspecBasePath)"
-              NuspecProperties="$(NuspecProperties)"/>
+              NuspecProperties="$(NuspecProperties)"
+              PackageLicenseFile="$(PackageLicenseFile)"
+              PackageLicenseExpression="$(PackageLicenseExpression)"
+              PackageLicenseExpressionVersion="$(PackageLicenseExpressionVersion)"/>
   </Target>
   <!--/+:cnd:noEmit-->
 </Project>
