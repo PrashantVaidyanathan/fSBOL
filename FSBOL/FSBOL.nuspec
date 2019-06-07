@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>FSBOL</id>
-    <version>2.2.1</version>
+    <version>2.2.1.01</version>
     <title>FSBOL</title>
     <authors>Prashant Vaidyanathan, Colin Gravill, Filippo Polo, Andrew Phillips</authors>
     <license type="expression">MIT</license>
