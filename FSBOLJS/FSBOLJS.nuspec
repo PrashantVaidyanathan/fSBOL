@@ -19,8 +19,7 @@
           <dependency id="WebSharper.FSharp" version="4.5.11.334" />
           <dependency id="FSharp.Core" version="4.6.2" />
       </group>
-    </dependencies>
-    
+    </dependencies>    
   </metadata>
   <files>
     <file src="C:\work\sbol\fsbol\FSBOL\*.fsproj" target="fable"/>
